@@ -8622,12 +8622,8 @@ with 1A, 60V Switch</description>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0402K"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="IC2" library="texas" deviceset="DIT4192-H" device=""/>
 <part name="U$1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL-GROUNDED" device=""/>
-<part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="100nF"/>
@@ -8679,13 +8675,14 @@ with 1A, 60V Switch</description>
 <part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="312.42" y="142.24" size="1.778" layer="91">9.5 ... 12.5V - Vdrop_D3
 max. 250mA</text>
-<text x="81.28" y="132.08" size="1.778" layer="98">differential input
+<text x="58.42" y="134.62" size="1.778" layer="98">differential input
 max 5Vp-p
 15k input impedance per pin</text>
 <text x="5.08" y="106.68" size="1.778" layer="98">RATE pin level
@@ -8697,18 +8694,19 @@ FLOAT - high performance, 48 kHz</text>
 9.5...12.5V</text>
 <text x="154.94" y="-185.42" size="1.778" layer="98">set R5, R6 for output voltage
 VCAPSULE = 48V</text>
+<text x="81.28" y="66.04" size="1.778" layer="98">HPFD
+LOW - enable high pass at 2Hz (-3dB)
+HIGH - disable (no DC decoupling)</text>
+<text x="65.278" y="66.548" size="1.778" layer="98" rot="R90">S/M
+LOW - master</text>
 </plain>
 <instances>
 <instance part="H1" gate="G$1" x="218.44" y="12.7"/>
 <instance part="H2" gate="G$1" x="218.44" y="20.32"/>
 <instance part="FRAME1" gate="G$1" x="-7.62" y="-10.16"/>
 <instance part="FRAME2" gate="G$1" x="419.1" y="-10.16"/>
-<instance part="C1" gate="G$1" x="71.12" y="185.42"/>
-<instance part="C2" gate="G$1" x="86.36" y="185.42"/>
 <instance part="IC2" gate="G$1" x="238.76" y="106.68"/>
 <instance part="U$1" gate="G$1" x="190.5" y="182.88"/>
-<instance part="C4" gate="G$1" x="71.12" y="170.18"/>
-<instance part="C5" gate="G$1" x="86.36" y="170.18"/>
 <instance part="R1" gate="G$1" x="48.26" y="187.96" rot="R270"/>
 <instance part="D1" gate="G$1" x="48.26" y="175.26"/>
 <instance part="C6" gate="G$1" x="27.94" y="127"/>
@@ -8754,12 +8752,13 @@ VCAPSULE = 48V</text>
 <instance part="D3" gate="G$1" x="309.88" y="114.3" rot="R90"/>
 <instance part="U1" gate="A" x="604.52" y="193.04"/>
 <instance part="IC3" gate="G$1" x="101.6" y="106.68"/>
-<instance part="GND14" gate="1" x="71.12" y="63.5"/>
+<instance part="GND14" gate="1" x="66.04" y="63.5"/>
 <instance part="GND15" gate="1" x="50.8" y="63.5"/>
 <instance part="C3" gate="G$1" x="187.96" y="78.74" rot="R180"/>
 <instance part="C10" gate="G$1" x="177.8" y="78.74" rot="R180"/>
 <instance part="GND2" gate="1" x="182.88" y="63.5"/>
 <instance part="GND16" gate="1" x="7.62" y="63.5"/>
+<instance part="GND17" gate="1" x="78.74" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -8851,9 +8850,9 @@ VCAPSULE = 48V</text>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="S/M"/>
-<wire x1="83.82" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="99.06" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="96.52" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="99.06" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="96.52" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -8906,6 +8905,13 @@ VCAPSULE = 48V</text>
 <wire x1="10.16" y1="119.38" x2="5.08" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="119.38" x2="2.54" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="106.68" x2="2.54" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="HPFD"/>
+<wire x1="83.82" y1="88.9" x2="81.28" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="88.9" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="86.36" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -9144,6 +9150,20 @@ VCAPSULE = 48V</text>
 <junction x="182.88" y="86.36"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="83.82" x2="187.96" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VIN+"/>
+<wire x1="83.82" y1="124.46" x2="58.42" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="124.46" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VIN-"/>
+<wire x1="83.82" y1="119.38" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="119.38" x2="43.18" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
