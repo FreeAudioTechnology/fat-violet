@@ -1663,6 +1663,38 @@ Shure</description>
 </package>
 </packages>
 </library>
+<library name="burr-brown">
+<description>&lt;b&gt;Burr-Brown Components&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SO08">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
+<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
+<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
+<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
+<circle x="-1.8034" y="-0.9906" radius="0.3556" width="0.0508" layer="21"/>
+<smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="7" x="-0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="6" x="0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="4" x="1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="5" x="1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<text x="4.0005" y="-2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-2.7305" y="-2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
+<rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
+<rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
+<rectangle x1="1.7272" y1="-2.8702" x2="2.0828" y2="-1.8542" layer="51"/>
+<rectangle x1="-2.0828" y1="1.8542" x2="-1.7272" y2="2.8702" layer="51"/>
+<rectangle x1="-0.8128" y1="1.8542" x2="-0.4572" y2="2.8702" layer="51"/>
+<rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
+<rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1856,9 +1888,9 @@ design rules under a new name.</description>
 <element name="C12" library="SparkFun-Passives" package="0805" value="10uF" x="30.988" y="20.066" rot="R180"/>
 <element name="C13" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="28.194" y="21.59" rot="R180"/>
 <element name="C14" library="SparkFun-Passives" package="0805" value="10uF" x="27.94" y="20.066" rot="R180"/>
-<element name="C6" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="12.192" y="15.748" rot="R270"/>
-<element name="C7" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="9.652" y="15.748" rot="R270"/>
-<element name="C8" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="10.922" y="15.748" rot="R270"/>
+<element name="C6" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="6.192" y="26.748" rot="R270"/>
+<element name="C7" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="7.652" y="26.748" rot="R270"/>
+<element name="C8" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="8.922" y="26.748" rot="R270"/>
 <element name="C9" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="47.244" y="26.416" rot="R270"/>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="BLUE" x="24.384" y="10.668" rot="R90">
 <attribute name="PROD_ID" value="DIO-08575" x="24.384" y="10.668" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1876,12 +1908,12 @@ design rules under a new name.</description>
 <element name="U$1" library="SparkFun-FreqCtrl" package="CRYSTAL-SMD-5X3" value="CRYSTAL-GROUNDED" x="23.876" y="22.098" rot="R90"/>
 <element name="U$2" library="PJ327A-TRS" package="PJ-327A" value="PJ-327A" x="15" y="32" rot="R270"/>
 <element name="U$3" library="PJ327A-TRS" package="PJ-327A" value="PJ-327A" x="15" y="0" rot="R90"/>
-<element name="Q1" library="transistor-fet" package="SOT23" value="SST5484" x="5.588" y="18.288" rot="R90"/>
-<element name="R3" library="rcl" package="R0805W" value="10M" x="1.016" y="21.336" rot="R270"/>
-<element name="C17" library="rcl" package="C0603K" value="" x="2.032" y="18.288"/>
-<element name="C19" library="rcl" package="C0603K" value="" x="4.064" y="10.668"/>
-<element name="C20" library="rcl" package="C0603K" value="" x="4.064" y="8.636"/>
-<element name="R4" library="rcl" package="R0805W" value="10M" x="3.048" y="14.732" rot="R270"/>
+<element name="Q1" library="transistor-fet" package="SOT23" value="SST5484" x="3.712" y="18.588" rot="R180"/>
+<element name="R3" library="rcl" package="R0805W" value="10M" x="0.984" y="12.664" rot="R90"/>
+<element name="C17" library="rcl" package="C0603K" value="" x="2.032" y="15.288"/>
+<element name="C19" library="rcl" package="C0603K" value="" x="10" y="19.4"/>
+<element name="C20" library="rcl" package="C0603K" value="" x="27" y="15" rot="R90"/>
+<element name="R4" library="rcl" package="R0805W" value="10M" x="3.048" y="12.732" rot="R270"/>
 <element name="D2" library="SparkFun-DiscreteSemi" package="SOD-323" value="PMEG4005EJ" x="41.402" y="4.572" rot="R270">
 <attribute name="PROD_ID" value="DIO-10955" x="41.402" y="4.572" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
@@ -1901,16 +1933,29 @@ design rules under a new name.</description>
 <element name="D3" library="SparkFun-DiscreteSemi" package="SOD-323" value="PMEG4005EJ" x="45.974" y="8.89" rot="R90">
 <attribute name="PROD_ID" value="DIO-10955" x="45.974" y="8.89" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="U1" library="LT8330-boost-TSOT23" package="SOIC127P600X175-8N" value="OPA1612AID" x="5.664" y="25.734" rot="R270">
-<attribute name="OC_FARNELL" value="1754265" x="5.664" y="25.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="PACKAGE" value="SOIC-8" x="5.664" y="25.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="MPN" value="OPA1612AID" x="5.664" y="25.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="SUPPLIER" value="TI" x="5.664" y="25.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="25R6133" x="5.664" y="25.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<element name="U1" library="LT8330-boost-TSOT23" package="SOIC127P600X175-8N" value="OPA1612AID" x="52.664" y="33.734" rot="R270">
+<attribute name="OC_FARNELL" value="1754265" x="52.664" y="33.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="PACKAGE" value="SOIC-8" x="52.664" y="33.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="MPN" value="OPA1612AID" x="52.664" y="33.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="SUPPLIER" value="TI" x="52.664" y="33.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="25R6133" x="52.664" y="33.734" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
 <element name="IC3" library="TI-PCM4201" package="TSSOP-16" value="PCM4201-TSSOP-16" x="32.258" y="26.67"/>
 <element name="C3" library="SparkFun-Passives" package="0402-CAP" value="100nF" x="33.782" y="21.59"/>
 <element name="C10" library="SparkFun-Passives" package="0805" value="10uF" x="34.036" y="20.066"/>
+<element name="IC1" library="burr-brown" package="SO08" value="OPA2134U" x="10" y="16" rot="R90">
+<attribute name="OC_FARNELL" value="1206935" x="10" y="16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="OPA2134UA" x="10" y="16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="TEXAS INSTRUMENTS" x="10" y="16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="35C1847" x="10" y="16" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="IC4" library="burr-brown" package="SO08" value="OPA2134U" x="21" y="16" rot="R90">
+<attribute name="OC_FARNELL" value="1206935" x="21" y="16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="OPA2134UA" x="21" y="16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="TEXAS INSTRUMENTS" x="21" y="16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="35C1847" x="21" y="16" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R7" library="SparkFun-Passives" package="0603-RES" value="" x="15.5" y="15" rot="R90"/>
 </elements>
 <signals>
 <signal name="VIO">
@@ -2005,7 +2050,7 @@ design rules under a new name.</description>
 <wire x1="27.544" y1="22.21" x2="27.544" y2="21.59" width="0.254" layer="1"/>
 <contactref element="IC3" pad="P$6"/>
 <wire x1="29.21" y1="30.48" x2="19.5" y2="30.4" width="0" layer="19" extent="1-1"/>
-<wire x1="3.048" y1="13.6795" x2="24.892" y2="16.256" width="0" layer="19" extent="1-1"/>
+<wire x1="3.048" y1="11.6795" x2="24.892" y2="16.256" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3">
 <contactref element="IC3" pad="P$12"/>
@@ -2019,14 +2064,14 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="R3" pad="2"/>
 <contactref element="C17" pad="1"/>
-<wire x1="1.157" y1="18.288" x2="1.016" y2="20.2835" width="0" layer="19" extent="1-1"/>
+<wire x1="0.984" y1="13.7165" x2="1.157" y2="15.288" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="C17" pad="2"/>
 <contactref element="Q1" pad="3"/>
 <contactref element="R4" pad="1"/>
-<wire x1="4.488" y1="18.288" x2="2.907" y2="18.288" width="0" layer="19" extent="1-1"/>
-<wire x1="3.048" y1="15.7845" x2="2.907" y2="18.288" width="0" layer="19" extent="1-1"/>
+<wire x1="3.048" y1="13.7845" x2="2.907" y2="15.288" width="0" layer="19" extent="1-1"/>
+<wire x1="3.712" y1="17.488" x2="2.907" y2="15.288" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCAPSULE">
 <contactref element="D2" pad="C"/>
@@ -2041,7 +2086,7 @@ design rules under a new name.</description>
 <wire x1="38.862" y1="3.048" x2="39.966" y2="1.944" width="0.1778" layer="1"/>
 <wire x1="39.966" y1="1.944" x2="39.966" y2="1.524" width="0.1778" layer="1"/>
 <wire x1="38.1" y1="5.334" x2="38.15" y2="5.472" width="0" layer="19" extent="1-1"/>
-<wire x1="1.016" y1="22.3885" x2="38.15" y2="5.472" width="0" layer="19" extent="1-1"/>
+<wire x1="0.984" y1="11.6115" x2="38.1" y2="5.334" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R6" pad="2"/>
@@ -2207,6 +2252,28 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$20">
 <contactref element="IC3" pad="P$14"/>
+</signal>
+<signal name="N$21">
+<contactref element="R7" pad="1"/>
+<contactref element="IC1" pad="1"/>
+<wire x1="12.6162" y1="14.095" x2="15.5" y2="14.15" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22">
+<contactref element="IC1" pad="2"/>
+<contactref element="R7" pad="2"/>
+<wire x1="12.6162" y1="15.365" x2="15.5" y2="15.85" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$23">
+<contactref element="IC1" pad="4"/>
+</signal>
+<signal name="N$24">
+<contactref element="IC1" pad="8"/>
+</signal>
+<signal name="N$25">
+<contactref element="IC4" pad="8"/>
+</signal>
+<signal name="N$26">
+<contactref element="IC4" pad="4"/>
 </signal>
 </signals>
 </board>
